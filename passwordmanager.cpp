@@ -1,7 +1,16 @@
 #include <iostream>
-#include "passwordmanager.h"
+/* #include "passwordmanager.h" */
+
 using namespace std;
 
+
+string menu_Prompts[] = {
+"What would you like to do? \n",
+"\n(1) Create new password",
+"\n(2) Store password to vault",
+"\n(3) Access password Vault",
+"\n(4) Quit\n"
+};
 
 string choice_Prompts[] = {
 "Press 1 to return to main menu, or press 2 and press Enter to shuffle generated password > ",
@@ -17,14 +26,16 @@ string newpass_Prompts[] = {
 
 /* MAIN Variables */
 
-/* bool exist = ""    DONT FORGET ABOUT ME!!! */
-/*bool run = false; */
 bool main_Menu = false;
 bool newpassword = false;
 bool did_shuffle = false;
 bool vault_Main = false;
 int menu_State = 0;
 int menu_Choice;
+
+/* bool exist = ""    DONT FORGET ABOUT ME!!! */
+/*bool run = false; */
+
 
 /* USER Variables */
 string name = "";
@@ -45,6 +56,7 @@ cout << menu_Prompts[3];
 cout << menu_Prompts[4];
 
 cout << "\nChoose an answer: > ";
+cin >> menu_Choice;
 
 
 return 0;
