@@ -7,7 +7,7 @@ string menu_Prompts[] = {
 "\n(1) Create new password",
 "\n(2) Store password to vault",
 "\n(3) Access password Vault",
-"\n(4) Quit"
+"\n(4) Quit\n"
 };
 
 string choice_Prompts[] = {
@@ -25,13 +25,13 @@ string newpass_Prompts[] = {
 /* MAIN Variables */
 
 /* bool exist = ""    DONT FORGET ABOUT ME!!! */
-bool run = false;
+/*bool run = false; */
 bool main_Menu = false;
 bool newpassword = false;
 bool did_shuffle = false;
 bool vault_Main = false;
 int menu_State = 0;
-string menu_Choice = "";
+int menu_Choice;
 
 /* USER Variables */
 string name = "";
@@ -42,7 +42,7 @@ string phrase = "";
 
 int main()
 {
-
+main_Menu = true;
 cout << "Password Manager V.0.1 (NON)-GUI BY ALEX A" << endl;
 
 cout << menu_Prompts[0];
@@ -51,6 +51,7 @@ cout << menu_Prompts[2];
 cout << menu_Prompts[3];
 cout << menu_Prompts[4];
 
+cout << "\nChoose an answer: > ";
 
 
 return 0;
