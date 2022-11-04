@@ -1,14 +1,7 @@
 #include <iostream>
-
+#include "passwordmanager.h"
 using namespace std;
 
-string menu_Prompts[] = {
-"What would you like to do? \n",
-"\n(1) Create new password",
-"\n(2) Store password to vault",
-"\n(3) Access password Vault",
-"\n(4) Quit\n"
-};
 
 string choice_Prompts[] = {
 "Press 1 to return to main menu, or press 2 and press Enter to shuffle generated password > ",
